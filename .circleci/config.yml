@@ -21,7 +21,7 @@ jobs:
     working_directory: /go/src/github.com/gomth/pow
     steps:
       - checkout
-      - run: go mod init
+      - run: go mod download
       - run: go build
       - run:
           name: "Create a temp directory for artifacts"
